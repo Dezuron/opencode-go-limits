@@ -1,0 +1,44 @@
+{
+  "name": "opencode-go-limits",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "OpenCode TUI plugin: Go / Go Plus quota windows and per-model monthly request limits in the session sidebar",
+  "license": "MIT",
+  "keywords": [
+    "opencode",
+    "opencode-plugin",
+    "opencode-go",
+    "go-plus",
+    "quota",
+    "limits",
+    "tui"
+  ],
+  "exports": {
+    ".": "./index.ts",
+    "./tui": "./tui.tsx"
+  },
+  "scripts": {
+    "test": "node --test test/",
+    "check": "bun scripts/check.mjs",
+    "smoke": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/smoke.ps1"
+  },
+  "dependencies": {
+    "@opencode/plugin": "^2.0.19"
+  },
+  "peerDependencies": {
+    "@opentui/core": ">=0.5.12",
+    "@opentui/solid": ">=0.5.12",
+    "solid-js": ">=1.9.0"
+  },
+  "peerDependenciesMeta": {
+    "@opentui/core": {
+      "optional": true
+    },
+    "@opentui/solid": {
+      "optional": true
+    },
+    "solid-js": {
+      "optional": true
+    }
+  }
+}
